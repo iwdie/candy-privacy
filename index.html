@@ -32,33 +32,47 @@
   <h1>Candy privacy policy</h1>
   <p class="meta">Effective date: October 25, 2026</p>
 
-  <p class="summary">Candy does not collect, sell or share your personal data. The app connects only to the OpenCode server that you set up and choose to connect to. The developer runs no servers that receive your data.</p>
+  <p class="summary">Candy does not collect, sell or share your personal data. The app connects to the OpenCode server that you set up, plus a voice service only if you choose one. The developer runs no servers that receive your data.</p>
 
   <h2>About this policy</h2>
   <p>This policy applies to the Candy Android app (“Candy”, “the app”), developed by Naveen (“I”, “me”). Candy is an unofficial client for OpenCode. It is not made, endorsed or supported by the OpenCode project.</p>
 
   <h2>Information the app handles</h2>
   <ul>
-    <li><strong>Server connection details.</strong> The address of your OpenCode server and any login details you enter for it are stored only on your device, so you don't have to re-enter them.</li>
-    <li><strong>Sessions and messages.</strong> Prompts you send, responses, and session or project information travel directly between your device and your own OpenCode server. They are not sent to me or to any other party by Candy.</li>
-    <li><strong>App settings.</strong> Preferences such as theme are stored locally on your device.</li>
+    <li><strong>Server connection details.</strong> The address of your OpenCode server, its password or pairing token, and session cookies are stored only on your device so you stay connected.</li>
+    <li><strong>Sessions and messages.</strong> Prompts you send, responses, project folders and screenshots your agent saves travel directly between your device and your own OpenCode server. They are not sent to me.</li>
+    <li><strong>Voice.</strong> If you use voice dictation or Call Candy, the app records audio from your microphone only while you are speaking to it. How that audio is handled depends on the voice mode you choose (see below).</li>
+    <li><strong>Camera.</strong> The camera is used only to scan the pairing QR code shown by OpenCode. Images are processed on your device and not stored or sent anywhere.</li>
+    <li><strong>App settings.</strong> Preferences, drafts and any API key you enter for a voice service are stored locally on your device.</li>
   </ul>
-  <p>Candy does not collect your name, email address, contacts, location, photos, or device identifiers, and it does not require an account.</p>
+  <p>Candy does not collect your name, email address, contacts, location, or device identifiers, and it does not require an account.</p>
 
   <h2>Where your data goes</h2>
-  <p>Candy communicates only with the server address you enter. Whatever that server does with your data (including any AI model providers it is configured to use) is governed by that server's setup and the policies of those providers, not by Candy. Please review their policies separately.</p>
+  <p>Candy has no server of its own. Depending on the features you use, data goes only to:</p>
+  <ul>
+    <li><strong>Your OpenCode server</strong>, at the address you enter. What it does with your data, including any AI model providers it is configured to use, is governed by your own setup and those providers&rsquo; policies.</li>
+    <li><strong>Sarvam AI</strong>, only if you choose the Sarvam voice mode and enter your own Sarvam API key. Audio is streamed to Sarvam while you dictate, under Sarvam&rsquo;s own privacy policy.</li>
+    <li><strong>Google&rsquo;s speech service</strong>, only if you choose a Google speech voice mode. Your phone&rsquo;s speech service may send audio to Google unless offline speech is downloaded, under <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a>.</li>
+    <li><strong>Hugging Face</strong>, only to download on-device voice models when you tap Prepare. This is an ordinary file download; no audio or personal content is sent. In the on-device voice modes, audio never leaves your phone.</li>
+  </ul>
+  <p>Typing &ldquo;demo&rdquo; as the server address opens a demo mode that uses built-in sample data and sends nothing over the network.</p>
 
   <h2>Analytics, ads and tracking</h2>
-  <p>Candy contains no advertising, no analytics SDKs and no tracking. Google Play may collect limited information such as install statistics and crash reports under <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+  <p>Candy contains no advertising, no analytics SDKs and no tracking. Google Play may collect limited information such as install statistics and crash reports under <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a>.</p>
 
   <h2>Permissions</h2>
-  <p>Candy uses network access to connect to your OpenCode server. It does not request access to your location, camera, microphone, contacts or files.</p>
+  <ul>
+    <li><strong>Internet and network state</strong>: to connect to your OpenCode server and the services listed above.</li>
+    <li><strong>Camera</strong>: to scan the pairing QR code.</li>
+    <li><strong>Microphone</strong>: for voice dictation and Call Candy.</li>
+    <li><strong>Audio settings and Bluetooth</strong>: to route Call Candy audio to a headset or watch.</li>
+  </ul>
 
   <h2>Sharing</h2>
   <p>I do not sell, rent or share your data with any third party, because Candy does not send your data to me in the first place.</p>
 
   <h2>Security</h2>
-  <p>Data stored by the app stays in Candy's private storage on your device. For your safety, connect to your server over HTTPS or a private network such as a VPN wherever possible.</p>
+  <p>Data stored by the app stays in Candy's private storage on your device. If you use Android's device backup, app settings may be included in your backup. For your safety, connect to your server over HTTPS or a private network such as a VPN wherever possible.</p>
 
   <h2>Deleting your data</h2>
   <p>You can remove everything Candy has stored by clearing the app's storage in Android settings or by uninstalling the app. Since I hold no copy of your data, there is nothing else to delete.</p>
